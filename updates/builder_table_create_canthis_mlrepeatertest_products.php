@@ -12,7 +12,8 @@ class BuilderTableCreateCanthisMlrepeatertestProducts extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('name')->nullable();
-            $table->text('description')->nullable();
+            $table->text('description_repeater')->nullable();
+            $table->text('description_standalone')->nullable();
         });
     }
     

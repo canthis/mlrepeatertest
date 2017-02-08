@@ -36,8 +36,9 @@ class Product extends Model
      */
     public $translatable = [
         'name',
-        'description', 
+        'description_repeater',
+        'description_standalone', 
     ];
     
-    protected $jsonable = ['description'];
+    protected $jsonable = ['description_repeater'];
 }

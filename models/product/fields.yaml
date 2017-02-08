@@ -1,33 +1,43 @@
 fields:
+    explanation:
+        span: full
+        path: ~/plugins/canthis/mlrepeatertest/controllers/products/_hint.htm
+        type: hint
     name:
         label: Name
         oc.commentPosition: ''
         span: auto
         type: text
-    description:
-        label: Description
-        oc.commentPosition: ''
-        prompt: 'Add new item'
-        span: full
-        type: repeater
-        comment: 'Multilanguage repeater with richeditor in it'
-        form:
-            fields:
-                heading:
-                    label: Heading
-                    oc.commentPosition: ''
-                    span: auto
-                    type: text
-                plaintext:
-                    label: 'Plain Text'
-                    size: ''
-                    oc.commentPosition: ''
-                    span: full
-                    type: textarea
-                    comment: Textarea
-                content:
-                    label: 'Rich editor'
-                    size: ''
-                    oc.commentPosition: ''
-                    span: full
-                    type: richeditor
+tabs:
+    fields:
+        description_repeater:
+            label: 'Multilanguage repeater with richeditor in it'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            commentAbove: 'Value is being saved to jsonable "description_repeater" DB field'
+            tab: 'Richeditor within MLRepeater'
+            form:
+                fields:
+                    description:
+                        label: Heading
+                        span: auto
+                        type: text
+                    plaintext:
+                        label: 'Plain Text (Textarea)'
+                        size: ''
+                        span: full
+                        type: textarea
+                    content:
+                        label: 'Rich editor'
+                        size: ''
+                        oc.commentPosition: ''
+                        span: full
+                        type: richeditor
+        description_standalone:
+            label: 'Multilanguage Richeditor'
+            size: large
+            span: full
+            type: richeditor
+            commentAbove: 'Value is being saved to "description_standalone" DB field'
+            tab: 'Standalone MLRicheditor'

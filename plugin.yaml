@@ -1,0 +1,11 @@
+plugin:
+    name: 'canthis.mlrepeatertest::lang.plugin.name'
+    description: 'canthis.mlrepeatertest::lang.plugin.description'
+    author: CanThis
+    icon: oc-icon-language
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'ML Repeater Test'
+        url: canthis/mlrepeatertest/products
+        icon: icon-language

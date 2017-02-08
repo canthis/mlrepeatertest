@@ -1,0 +1,11 @@
+name: Products
+modelClass: CanThis\MLRepeaterTest\Models\Product
+form: $/canthis/mlrepeatertest/models/product/fields.yaml
+defaultRedirect: canthis/mlrepeatertest/products
+create:
+    redirect: 'canthis/mlrepeatertest/products/update/:id'
+    redirectClose: canthis/mlrepeatertest/products
+update:
+    redirect: canthis/mlrepeatertest/products
+    redirectClose: canthis/mlrepeatertest/products
+preview: {  }

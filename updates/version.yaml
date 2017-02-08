@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table canthis_mlrepeatertest_products'
+    - builder_table_create_canthis_mlrepeatertest_products.php

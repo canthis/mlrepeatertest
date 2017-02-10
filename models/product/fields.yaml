@@ -40,7 +40,7 @@ tabs:
                         size: 'small'
                         oc.commentPosition: ''
                         span: full
-                        type: markdown
+                        type: markdown                        
         description_standalone:
             label: 'Multilanguage Richeditor'
             size: large

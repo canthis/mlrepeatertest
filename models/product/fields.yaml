@@ -30,10 +30,17 @@ tabs:
                         type: textarea
                     content:
                         label: 'Rich editor'
-                        size: ''
+                        size: 'small'
                         oc.commentPosition: ''
                         span: full
                         type: richeditor
+                    markdown_content:
+                        label: 'Markdown editor'
+                        mode: split
+                        size: 'small'
+                        oc.commentPosition: ''
+                        span: full
+                        type: markdown
         description_standalone:
             label: 'Multilanguage Richeditor'
             size: large

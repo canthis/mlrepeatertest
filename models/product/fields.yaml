@@ -19,28 +19,32 @@ tabs:
             tab: 'Richeditor within MLRepeater'
             form:
                 fields:
-                    description:
+                    heading:
                         label: Heading
                         span: auto
                         type: text
+                        default: 'I am default heading within ML Repeater'
                     plaintext:
                         label: 'Plain Text (Textarea)'
                         size: ''
                         span: full
                         type: textarea
+                        default: 'I am default text for textarea within ML Repeater'
                     content:
                         label: 'Rich editor'
                         size: 'small'
                         oc.commentPosition: ''
                         span: full
                         type: richeditor
-                    markdown_content:
-                        label: 'Markdown editor'
-                        mode: split
-                        size: 'small'
-                        oc.commentPosition: ''
-                        span: full
-                        type: markdown                        
+                        default: 'I am default value for <b>Richeditor</b> within ML Repeater' 
+#                    markdown_content:
+#                        label: 'Markdown editor'
+#                        mode: split
+#                        size: 'small'
+#                        oc.commentPosition: ''
+#                        span: full
+#                        type: markdown
+#                        default: 'I am default value for **Markdown editor** within ML Repeater'
         description_standalone:
             label: 'Multilanguage Richeditor'
             size: large
@@ -48,3 +52,4 @@ tabs:
             type: richeditor
             commentAbove: 'Value is being saved to "description_standalone" DB field'
             tab: 'Standalone MLRicheditor'
+            default: 'I am default value for <b>standalone Richeditor</b> widget'
